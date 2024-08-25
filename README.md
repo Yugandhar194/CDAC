@@ -1,2 +1,2 @@
 # CDAC
-This is going to be my CDAC Repository for the next 6 months
+This will be my GitHub Repository of CDAC for the next 6 months. (Aug.2024 - Feb. 2025)
