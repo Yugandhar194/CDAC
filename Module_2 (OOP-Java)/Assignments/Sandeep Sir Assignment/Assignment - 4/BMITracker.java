@@ -48,7 +48,7 @@ class BMITracker {
             return "Obese";
         }
     }
-    // Method to display the BMI and classification
+    // Method to display the BMI
     public void printRecord() {
         double bmi = calculateBMI();
         String classification = classifyBMI();
@@ -57,7 +57,7 @@ class BMITracker {
         System.out.println("BMI Classification: " + classification);
     }
 
-    // Main method to test the functionality
+    // Main method
     public static void main(String[] args) {
         BMITracker bmiTracker = new BMITracker();
         // Accept user input
