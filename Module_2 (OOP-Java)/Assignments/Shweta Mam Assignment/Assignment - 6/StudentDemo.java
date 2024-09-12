@@ -16,7 +16,7 @@ class Student {
     }
 }
 
-public class StudentDemo {	//main function and methof
+public class StudentDemo {	//main function and method
     public static void main(String[] args) {
         Student student = new Student(134, "Yugandhar Deshmukh", 22);
         student.displayDetails();
