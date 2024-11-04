@@ -14,7 +14,7 @@ function getInitialExpenses() {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve([
-                { s: "Groceries", amount: 30, date: "2024-10-01" },
+                { description: "Groceries", amount: 30, date: "2024-10-01" },
                 { description: "Rent", amount: 500, date: "2024-10-02" },
                 { description: "Utilities", amount: 100, date: "2024-10-03" }
             ]);
