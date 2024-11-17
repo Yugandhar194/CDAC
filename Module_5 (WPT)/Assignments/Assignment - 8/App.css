@@ -1,0 +1,142 @@
+/* General button styles */
+button {
+  padding: 0.8rem 3.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 0;
+  background-color: #1abc9c;  /* Teal background for buttons */
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  margin-left: 1.2rem;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #16a085;  /* Slightly darker teal */
+  color: #ecf0f1;  /* Light text color on hover */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 19px 0px;
+}
+
+/* Specific styles for Delete button */
+.btn-delete {
+  background-color: #e74c3c;  /* Red background for Delete button */
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;  /* Darker red when hovered */
+  box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
+}
+
+/* Styling for the new post creation form */
+.create-post-form,
+.edit-post-form {
+  background-color: #f9f9f9;  /* Light gray background */
+  padding: 1.6rem;
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.create-post-form input,
+.create-post-form textarea,
+.edit-post-form input,
+.edit-post-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #2c3e50;  /* Darker text color */
+}
+
+.create-post-form input:focus,
+.create-post-form textarea:focus,
+.edit-post-form input:focus,
+.edit-post-form textarea:focus {
+  outline: none;
+  border-color: #1abc9c;  /* Highlight border on focus */
+}
+
+/* Input fields - select dropdown */
+.create-post-form select,
+.edit-post-form select {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0.4rem;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Section styles for Posts */
+.section-post {
+  width: 90%;
+  color: #2c3e50;  /* Dark gray for text */
+}
+
+.section-post ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Individual post styling */
+.section-post li {
+  background-color: #ecf0f1;  /* Light gray background for posts */
+  padding: 1.6rem;
+  border-radius: 0.6rem;
+  border-left: 4px solid transparent;
+  list-style-position: inside;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  color: #34495e;  /* Darker text for post details */
+}
+
+.section-post li p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Priority color coding - Soft, readable background colors */
+.priority-low {
+  background-color: #d6eaf8;  /* Soft blue */
+  border-left-color: #2980b9;  /* Blue border */
+}
+
+.priority-medium {
+  background-color: #f9e79f;  /* Soft yellow */
+  border-left-color: #f39c12;  /* Yellow border */
+}
+
+.priority-high {
+  background-color: #f9b9b9;  /* Soft orange */
+  border-left-color: #e67e22;  /* Orange border */
+}
+
+/* Styling for when priority is hovered */
+.section-post li:hover {
+  transform: translateY(-5px);  /* Slight lift effect */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 980px) {
+  .section-post ol {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .section-post ol {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .create-post-form,
+  .edit-post-form {
+      padding: 1rem;
+  }
+}
